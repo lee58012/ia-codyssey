@@ -1,16 +1,16 @@
-print('Hello Mars')
+print('Hello Mars')  # Hello Mars 출력
 
-try:
-    with open('mission_computer_main.log', 'r') as f:
+try:   # 예외 처리
+    with open('mission_computer_main.log', 'r', encoding='UTF-8') as f:
         lines = f.readlines()
-        lines.reverse()
+        lines.reverse()  # 역순 정렬
         
-    for i in lines:
+    for i in lines:  # 문제 발생 부분 출력
         print(i)
         
-    with open('issue.txt', 'w') as f:
+    with open('issue.txt', 'w', encoding='UTF-8') as f:  # 문제 발생 부분을 issue.txt파일로 저장
         for i in range(3):
             f.write(lines[i])
             
-except Exception as e:
+except Exception as e:  # 예외 처리
     print(e)
