@@ -1,12 +1,14 @@
 try:   # 예외 처리
     with open('mission_computer_main.log', 'r', encoding='UTF-8') as f:    #파일 읽기
-        lines = f.readlines()                                              
-        print(lines)                                                       #출력
+        lines = f.readlines()
+        print("--------------파일 출력--------------")                                              
+        print(lines)                                                       
         lst = []
         
         for line in lines[1:]:                                             # 첫번째 줄 무시
             parts = line.rstrip().split(',')                               # 콤마를 기준으로 분류
             lst.append([parts[0],parts[2]])                                # 리스트에 분류후 추가
+        print("--------------리스트 출력--------------")
         print(lst)     # 리스트 객체 출력
         
     print("--------------역순 정렬 후--------------")
