@@ -8,7 +8,7 @@ try:   # 예외 처리
             parts = line.rstrip().split(',')                              # 콤마를 기준으로 분류
             lst.append(parts)                           
         print("--------------역순 정렬 후--------------")
-        lst.sort(key=lambda x:x[4], reverse=True)                             #인화성 높은순으로 정렬 
+        lst.sort(key=lambda x:float(x[4]), reverse=True)                             #인화성 높은순으로 정렬 
         print(lst)
         print("--------------인화성 0.7이상--------------")
         Danger_list=[]
