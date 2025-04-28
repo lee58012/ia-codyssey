@@ -5,7 +5,7 @@ area = 0
 weight = 0
 
 m_list=['유리', '알루미늄', '탄소강']
-def  sphere_area(material='유리',diameter=0,thickness=1): #함수 기본값 설정
+def  sphere_area(material='유리',diameter=10,thickness=1): #함수 기본값 설정
     global area, weight #전역변수 선언
     r=(diameter//2)*100 # 반지름 구하고 cm로 변환
     area=2*3.14*r**2  #면적 구하기
