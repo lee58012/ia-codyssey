@@ -1,5 +1,3 @@
-# mars_mission_computer.py
-
 import random
 
 
